@@ -1,0 +1,61 @@
+html {
+    min-height: 100%;
+    widows: 100%;
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: linear-gradient(to bottom right, #B72353, #A0668D, #8F1231);
+    line-height: 2.5;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.accordion {
+    background: linear-gradient(to bottom right, white, #F8F8F8);
+    max-width: 95%;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 0 24px 34px -15px rgba(0, 0, 0, .5);
+}
+
+.accordion-header {
+    border-bottom: 1px solid #DDE0E7;
+    color: #2a313a;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 1.5rem;
+}
+
+.accordion-header:hover {
+    background: #F6F7F9;
+}
+
+.accordion-content {
+    display: none;
+    border-bottom: 1px solid #DDE0E7;
+    background: #F6F7F9;
+    padding: 1.5rem;
+    color: #4a5666;
+}
+
+.accordion-header::before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background-color: #B1B5BE;
+    margin-right: .75rem;
+}
+
+.active.accordion-header::before {
+    background-color: #FC6468;
+}
